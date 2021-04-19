@@ -1,0 +1,63 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>SI RTC Local Client</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+<div>
+    <h1>SI RTC Local</h1>
+
+    <video autoplay id="vid_loc"></video>
+
+    <div>
+        <button  id="startButton" >start</button>
+    </div>
+    <br>
+    <button id="callButton"   >
+        Call
+    </button>
+    <br>
+    <button id="sendData"  >
+        SendData
+    </button>
+    <br>
+
+
+    <button id="rtc_end_signal"  class="buttonright" >
+        End RTC Peer
+    </button>
+
+    <br>
+
+
+
+    <input id = "msgInput" type = "text" placeholder = "RTC Peeer message" />
+
+    <div class="messagebox">
+        <label for="message">Enter a message:
+            <input type="text" name="message" id="message" placeholder="Message text"
+                   inputmode="latin" size=60 maxlength=120 disabled>
+        </label>
+    </div>
+
+    <div class="messagebox" id="receivebox">
+        <p>Messages received:</p>
+    </div>
+
+</div>
+</body>
+</html>
+
+<script src= {% load static %}
+        {% static "/si_rtc_local.js" %}
+></script>

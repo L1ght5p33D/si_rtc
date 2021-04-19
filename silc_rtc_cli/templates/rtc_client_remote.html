@@ -1,0 +1,47 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>SI RTC Remote Client</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<div>
+    <h1>SI RTC Remote</h1>
+
+    <video autoplay id="remoteVideo"></video>
+
+    <div>
+        <button  id="test_webcam" >testwebcam</button>
+    </div>
+    <br>
+    <div>
+        <button  id="startButton" >start</button>
+    </div>
+    <br>
+    <button id="callButton"   >
+        Call
+    </button>
+    <button id="hangupButton"  >
+        Hangup
+    </button>
+    <br>
+    <button id="gmButton"  >
+        Get Media stream
+    </button>
+
+</div>
+</body>
+</html>
+
+
+<script src= {% load static %}
+        {% static "/vchatJS/6_vc_c2.js" %}
+></script>
